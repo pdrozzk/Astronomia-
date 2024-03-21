@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root { 
+    --cor-primaria--: #000000;
+    --cor--letras--: #7BD3EA;
+    --cor-titulo--: #526D82;
+    --cor-hr--: #EEF0E5;
+    --cor-linomedospulsare--:#1640D6;
+    --cor-borda-background--: #F0ECE5;
+    --cor-cima-baixo--: #8CB9BD;
+
+    --fonte--Krona--: "Krona One", sans-serif;
+    --fonte--Montserrat--: "Montserrat", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+
+    background-color: var(--cor-primaria--);
+    color: var(--cor--letras--);
+    
+}
+
+.cabecalho {
+  padding: 30px;
+  background-color: var(--cor-cima-baixo--);
+}
+
+.nav__cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--fonte--Krona--);
+    font-size: 1.5rem;
+}
+
+.astros {
+    text-decoration: none;
+    color: var(--cor-primaria--);
+}
+
+.corpo {
+     display: flex;
+     align-items: center;
+     padding: 5% 10%;
+     gap: 80px;
+     flex-direction: column;
+     
+}
+
+.section {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo {
+    font-family: var(--fonte--Krona--);
+    font-size: 2.25rem;
+    color: var(--cor-titulo--);
+} 
+
+.paragrafos__um {
+    font-family: var(--fonte--Montserrat--);
+    font-size: 1.2rem;
+}
+
+.imagem__pulsar__um{
+    width: 850px;
+}
+
+.ul {
+    flex-direction: column;
+    display: flex;
+    font-size: 1.1rem;
+    gap: 20px;
+    font-weight: bold;
+    font-family: var(--fonte--Montserrat--);
+}
+
+.paragrafos__dois {
+    font-size: 1.3rem;
+    font-family: var(--fonte--Montserrat--);
+}
+
+.imagem__pulsar__dois {
+    width: 850px;
+}
+
+.div__um{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.pulsares__notaveis {
+    font-family: var(--fonte--Krona--);
+    size: 50%;
+    text-align: center;
+
+} 
+
+.hr {
+    width: 1500px;
+    color: var(--cor-hr--);
+    height: 20%;
+}
+
+
+.ul__dois {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte--Montserrat--);
+    font-size: 1.1rem;
+    gap: 20px;
+}
+
+.li {
+    text-decoration: none;
+    color: var(--cor-linomedospulsare--);
+}
+
+.div__dois {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hr__dois {
+    width: 1500px;
+    color: var(--cor-hr--);
+    height: 20%;
+}
+
+.paragrafos__tres {
+    display: flex;
+    justify-content: start;
+}
+
+.recomendacoes {
+    text-decoration: none;
+}
+
+.div__tres {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: end;
+    margin: 10px;
+}
+
+.redes {
+    display: flex;
+    text-decoration: none;
+    border: 1px solid var(--cor-borda-background--);
+    color: #31304D;
+    width: 150px;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 8px 0;
+    font-family: var(--fonte--Montserrat--);
+    background-color: var(--cor-borda-background--);
+    font-size: 0.6rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+
+.redes:hover {
+    background-color: #9290C3;
+}
+
+.rodape {
+ 
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor-cima-baixo--);
+    color: #000000;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        background-color: black;
+        padding: 10%;
+    }
+
+    .nav__cabecalho {
+        justify-content: space-between;
+        gap: 80px;
+        font-size: 1rem;
+    }
+
+    .astros{
+        color: white;
+        justify-content: center;
+    }
+
+    .corpo {
+        background-color: #F0ECE5;
+        color: #000000;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8% 10%;
+
+    }
+
+
+    .titulo {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+
+    .imagem__pulsar__um {
+        width: 100%;
+    }
+
+    .imagem__pulsar__dois {
+        width: 100%;
+    } 
+
+    .div__um {
+        gap: 10%;
+    }
+
+    .enfeites {
+        display: none;
+        
+}
+
+    .hr {
+        width: 350px;
+       
+    }
+
+    .hr__dois {
+        width: 350px;
+    }
+}
